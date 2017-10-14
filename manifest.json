@@ -1,0 +1,26 @@
+{
+  "manifest_version": 1,
+  "name": "Nicolas Cate",
+  "version": "1.0",
+
+  "description": "This extension allows you to change all images of a page with either images of Nicolas Cage or Cats.",
+  "homepage_url": "https://github.com/9thScientist/Nicolas-Cate/",
+  "icons": {
+    "48": "icons/magic-wand-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/magic-wand-32.png",
+    "default_title": "Nicolas Cate",
+    "default_popup": "popup/popup.html"
+  },
+
+  "web_accessible_resources": [
+    "images/cat.jpg",
+    "images/nicolas.jpg"
+  ]
+}
