@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Nicolas Cate",
   "version": "1.0",
 
@@ -16,7 +16,8 @@
   "browser_action": {
     "default_icon": "icons/magic-wand-32.png",
     "default_title": "Nicolas Cate",
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "browser_style": false 
   },
 
   "web_accessible_resources": [

@@ -1,0 +1,37 @@
+html, body {
+  width: 150px;
+}
+
+.btn{
+  border-radius: 5px;
+  margin: 3px;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-normal {
+  background-color: #9dc5ea;
+}
+
+.btn-normal:hover {
+  background-color: #8caece;
+}
+
+.btn-normal:active {
+  background-color: #b5d6f4;
+}
+
+.btn-danger{
+  background-color: #f7725d;
+}
+
+.btn-danger:hover {
+  background-color: #ef472d;
+}
+
+.btn-danger:active{
+  background-color: #f28d7d;
+}
