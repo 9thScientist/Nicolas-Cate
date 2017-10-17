@@ -1,8 +1,8 @@
+/*
+ * Handler da mensagem. Recebe uma mensagem e executa uma ação
+ */
 function nicolasCate(request, sender, sendResponse) {
-    changeEveryImage(request.imageURL);
-
-    browser.runtime.onMessage.removeListener(nicolasCate);
-    //chrome.runtime.onMessage.removeListener(nicolasCate);
+    // ...
 }
 
 /*
@@ -10,15 +10,11 @@ function nicolasCate(request, sender, sendResponse) {
  * substitui pela imagem dada
  */
 function changeEveryImage(imageURL) {
-    var images = document.getElementsByTagName('img');
-    
-    for (let image of images) {
-        image.src = imageURL; 
-    }
+    // ...
 }
 
 /*
  * Sempre que recebe uma mensagem chama a função nicolasCate
  */
-browser.runtime.onMessage.addListener(nicolasCate);
-//chrome.runtime.onMessage.addListener(nicolasCate);
+
+    //...
