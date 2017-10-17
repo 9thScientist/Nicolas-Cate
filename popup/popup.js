@@ -11,6 +11,11 @@ document.getElementById('reset').addEventListener("click", () => {
     //chrome.tabs.reload();
 });
 
+document.getElementById('random').addEventListener("click", () => {
+    changeImage('random');
+
+});
+
 /*
  * Função chamada sempre que um botão é clicado.
  * Escolhe a imagem a alterar e procede à substituição.
@@ -52,5 +57,10 @@ function getImageURL(image) {
 	case "cat":
 	    return browser.extension.getURL("/images/cat.jpg");
 	    //return chrome.extension.getURL("/images/cat.jpg");
+	case "random":
+	    return "random";
+	
+	default:
+	    return null;
     }
 }

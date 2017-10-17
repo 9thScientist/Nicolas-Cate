@@ -10,7 +10,9 @@
   },
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "http://thecatapi.com/*",
+    "webRequest"
   ],
 
   "browser_action": {

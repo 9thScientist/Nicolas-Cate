@@ -11,10 +11,23 @@ function nicolasCate(request, sender, sendResponse) {
  */
 function changeEveryImage(imageURL) {
     var images = document.getElementsByTagName('img');
+    var r = imageURL === "random";
     
     for (let image of images) {
-        image.src = imageURL; 
+        image.src = (r) ? cat() : imageURL; 
     }
+}
+
+function cat(){
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "http://thecatapi.com/api/images/get?format=xml&type=jpg", false);
+  xhr.send( null );
+
+  var parser = new DOMParser();
+  var xmlDoc = parser.parseFromString(xhr.responseText,"text/xml");
+
+  return xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
 }
 
 /*
